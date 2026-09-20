@@ -7,16 +7,27 @@
 / {
     // Define a default keymap here.
     // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp Q    &kp W    &kp E    &kp R     &kp T    &kp Y      &kp U    &kp I     &kp O    &kp P     &kp LBKT  &kp RBKT
-&kp A    &kp S    &kp D    &kp F     &kp G    &kp H      &kp J    &kp K     &kp L    &kp SEMI  &kp SQT   &kp BSLH
-&kp Z    &kp X    &kp C    &kp V     &kp B    &kp N      &kp M    &kp COMMA &kp DOT  &kp FSLH  &kp MINUS &kp EQUAL
-&kp N1   &kp N2   &kp N3   &kp N4    &kp N5   &kp N6     &kp N7   &kp N8    &kp N9   &kp N0    &kp LBRC  &studio_unlock
-                  &kp ESC  &kp LGUI  &kp SPACE           &kp RET  &kp LALT  &kp BSPC
+&kp ESCAPE            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7  &kp N8     &kp N9      &kp N0         &kp MINUS
+&kp GRAVE             &kp Q         &kp W         &kp E         &kp R         &kp T     &kp Z         &kp U   &kp I      &kp O       &kp P          &kp LEFT_BRACKET
+&kp LEFT_SHIFT        &kp A         &kp S         &kp D         &kp F         &kp G     &kp H         &kp J   &kp K      &kp L       &kp SEMICOLON  &kp RIGHT_BRACKET
+&kp NON_US_BACKSLASH  &kp Y         &kp X         &kp C         &kp V         &kp B     &kp N         &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &kp SQT
+&kp LEFT_CONTROL      &kp LEFT_ALT  &kp SPACE     &kp RET       &kp LALT      &kp BSPC
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
