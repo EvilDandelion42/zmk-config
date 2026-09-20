@@ -1,0 +1,16 @@
+if SHIELD_MYZARAK_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "myzarak"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_MYZARAK_LEFT
+
+if SHIELD_MYZARAK_LEFT || SHIELD_MYZARAK_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_MYZARAK_LEFT || SHIELD_MYZARAK_RIGHT
